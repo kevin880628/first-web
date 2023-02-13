@@ -8,7 +8,8 @@ r = requests.get("https://www.ptt.cc/bbs/NBA/index.html")
 
 soup = BeautifulSoup(r.text,"html.parser")
 sel = soup.select("div.title")
-#. 就代表class
-#print(sel)
-for s in sel:
-    print(s["re"], s.text)
+# . 就代表class
+# # 就代表id
+print(sel)
+#for s in sel:
+   # print(s["re"], s.text)
