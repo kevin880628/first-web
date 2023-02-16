@@ -13,7 +13,7 @@ else :
     time = int(sys.argv[1])
 
 def capData() :
-    r = requests.get("https://www.ptt.cc/bbs/NBA/index.html")
+    r = requests.get("https://www.ptt.cc/bbs/Stock/index.html")
     
     global time
     while time > 0:
@@ -50,7 +50,7 @@ def saveToDB() :
 
     mydb = myclient["HereWeGoAgain"]
 
-    mycol = mydb["mobel"]
+    mycol = mydb["stock"]
     
     mycol.insert_many(article)
 
